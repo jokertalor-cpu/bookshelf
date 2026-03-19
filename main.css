@@ -41,13 +41,14 @@ body{
 
 }
 .book{
-      width: 100px;
-      height: auto;
       display: flex;
       flex-direction: column;
       margin: 30px;
       padding: 10px;
       transition: 0.1s ease;
+} .book img{
+    width:100px;
+    height:150px;
 }
 .book img:hover{
     transform:scale(1.1);
@@ -55,7 +56,6 @@ body{
 }
 .book p{
     text-decoration: none;
-    font-style: italic;
 }
  .dropdown-menu {
     display: none;
@@ -85,4 +85,20 @@ body{
     background-color: #555;
 }
 
-        
+ #booklist{
+     list-style-type: none;
+     padding: 0;
+     margin: 10px 0;
+     border: 1px solid #ddd;
+     display:none;
+     max-width:250px;
+ }
+ #booklist li{
+    padding:10px;
+    border-bottom: 1px solid#eee;
+    cursor: pointer;
+ }
+ #booklist li:hover{
+    background-color: #f0f0f0;
+ }
+ 
